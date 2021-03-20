@@ -1,0 +1,65 @@
+body {
+    background-color: rgb(70, 64, 95);
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+#ToDoListDiv {
+    padding: 1rem;
+    justify-content: center;
+    margin: auto;
+    border-radius: 1rem;
+    background-color: rgb(112, 111, 179);
+    width: 60%;
+    min-width: 30px;
+    max-width: 400px;
+    color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#ToDoHeading {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+#ToDos > *:hover{
+    background-color: rgb(160, 152, 194);
+    color:beige;
+    text-decoration: line-through;
+}
+
+
+#ToDos > * {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    background-color: rgb(75, 63, 109);
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#ToDos > *, #inputNewToDo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+
+#inputNewToDo {
+    border-radius: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    display: flex;
+}

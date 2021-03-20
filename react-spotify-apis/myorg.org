@@ -1,0 +1,15 @@
+* Chet Time
+- created nodemon with npm so that it will live update. 
+- Set up backend using ExpressJS
+** NOTE: strategies
+You can give a constructor an object with an execute method. This will duck type it to be a strategy.
+- Set up Passport
+- store clientId and clientSecret in .env
+** NOTE: npm install -D
+D stands for "dev dependency." You can see this in your package.json. 
+** TODO Create Proxy Server
+** TODO Fix current code to communicate with Spotify
+    Presumably there will be much talk about promises.
+** TODO later
+- look up factory functions
+- 

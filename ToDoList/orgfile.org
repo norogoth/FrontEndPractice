@@ -1,0 +1,5 @@
+* To Do
+    ** TODO: Handle user input and ToDo creation
+    ** TODO: Handle hover over strikethrough
+    ** TODO: Handle deletion
+    ** TODO: Handle ctl-z restore
