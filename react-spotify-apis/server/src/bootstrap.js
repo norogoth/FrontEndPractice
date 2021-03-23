@@ -2,7 +2,7 @@
 require('dotenv').config() 
 
 const passport = require('passport');
-const session = require('express-session')
+const session = require('express-session') //Use if you want to 
 const express = require('express') //getting express package
 
 const app = express() // Factory function which returns a valid server
@@ -53,7 +53,7 @@ passport.use(
         refreshToken,
         expires_in,
         profile,
-    //   })
+      })
 //IF you want to add features on our end, this creates a user on OUR end.
       // User.findOrCreate({ spotifyId: profile.id }, function(err, user) {
       //   return done(err, user);
@@ -90,7 +90,8 @@ app.get(
 //END OF PASSPORT
 
 app.get('/', (req, res) => {
-  res.send(`<pre>${JSON.stringify(req.user, null, 2)}</pre>`)
+  res.redirect(`http://localhost:3000?accessToken=${req.user.accessToken}`)
+  // res.send(`<pre>${JSON.stringify(req.user, null, 2)}</pre>`)
 })
 
 
